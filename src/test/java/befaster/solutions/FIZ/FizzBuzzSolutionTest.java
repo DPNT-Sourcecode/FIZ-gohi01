@@ -68,12 +68,6 @@ public class FizzBuzzSolutionTest {
     }
 
     @Test
-    public void check_delux_with_3_numbers_in_a_row_and_divided_by_3() {
-        String answer = fizzBuzz.fizzBuzz(111);
-        assertEquals("deluxe", answer);
-    }
-
-    @Test
     public void check_delux_divided_by_5() {
         String answer = fizzBuzz.fizzBuzz(55);
         assertEquals("deluxe", answer);
@@ -91,12 +85,21 @@ public class FizzBuzzSolutionTest {
         assertEquals("fizz buzz", answer);
     }
 
+    @Test
+    public void check_fizz_buzz_33() {
+        String answer = fizzBuzz.fizzBuzz(33);
+        assertEquals("fizz deluxe", answer);
+    }
+
     /**
      * ILED
      Some requests have failed (6/43). Here are some of them:
      - {"method":"fizz_buzz","params":[546],"id":"FIZ_R3_030"}, expected: "fizz buzz", got: "fizz buzz deluxe"
      - {"method":"fizz_buzz","params":[33],"id":"FIZ_R3_038"}, expected: "fizz deluxe", got: "deluxe"
      - {"method":"fizz_buzz","params":[222],"id":"FIZ_R3_039"}, expected: "fizz deluxe", got: "deluxe"
+
+     BUZZ DELUXE!
+     - {"method":"fizz_buzz","params":[33],"id":"FIZ_R3_038"}, expected: "fizz deluxe", got: "deluxe"
      */
 
     @Test
