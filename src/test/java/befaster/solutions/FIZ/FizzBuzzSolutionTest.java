@@ -86,6 +86,12 @@ public class FizzBuzzSolutionTest {
     }
 
     @Test
+    public void check_fizz_buzz() {
+        String answer = fizzBuzz.fizzBuzz(546);
+        assertEquals("fizz buzz", answer);
+    }
+
+    @Test
     public void check_exceed_min_border() {
         thrown.expect(FizzExceedBorderException.class);
         fizzBuzz.fizzBuzz(0);
