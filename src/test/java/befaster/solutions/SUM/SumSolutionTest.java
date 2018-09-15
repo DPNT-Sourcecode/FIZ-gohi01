@@ -32,10 +32,17 @@ public class SumSolutionTest {
     }
 
     @Test
-    public void wrong_number_below_zero() {
+    public void wrong_number1_below_zero() {
         thrown.expect(NumberFormatException.class);
 
         sum.compute(-1, 0);
+    }
+
+    @Test
+    public void wrong_number2_below_zero() {
+        thrown.expect(NumberFormatException.class);
+
+        sum.compute(10, -1);
     }
 
 
