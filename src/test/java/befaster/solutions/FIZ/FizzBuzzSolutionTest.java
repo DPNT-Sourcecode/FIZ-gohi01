@@ -84,13 +84,13 @@ public class FizzBuzzSolutionTest {
         String answer = fizzBuzz.fizzBuzz(55);
         assertEquals("buzz fake deluxe", answer);
     }
-/*
+
     @Test
     public void check_min_fizz_deluxe() {
-        String answer = fizzBuzz.fizzBuzz(3);
+        String answer = fizzBuzz.fizzBuzz(36);
         assertEquals("fizz deluxe", answer);
     }
-*/
+
     @Test
     public void check_even_number() {
         String answer = fizzBuzz.fizzBuzz(22);
