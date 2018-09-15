@@ -22,13 +22,7 @@ public class FizzBuzzSolutionTest {
     @Test
     public void check_number() {
         String answer = fizzBuzz.fizzBuzz(1);
-        assertEquals("1", answer);
-    }
-
-    @Test
-    public void check_fizz() {
-        String answer = fizzBuzz.fizzBuzz(3);
-        assertEquals("fizz", answer);
+        assertEquals("fake deluxe", answer);
     }
 
     @Test
