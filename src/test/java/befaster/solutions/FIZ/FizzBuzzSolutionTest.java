@@ -51,7 +51,7 @@ public class FizzBuzzSolutionTest {
 
     @Test
     public void check_fizz_with_5_in_number() {
-        String answer = fizzBuzz.fizzBuzz(15);
+        String answer = fizzBuzz.fizzBuzz(59);
         assertEquals("buzz", answer);
     }
 
