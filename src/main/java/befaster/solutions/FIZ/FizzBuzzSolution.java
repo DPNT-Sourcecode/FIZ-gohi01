@@ -40,7 +40,7 @@ public class FizzBuzzSolution {
     }
 
     private boolean isFakeDeluxe(Integer number) {
-        return (number % 2 != 0);
+        return (number % 2 != 0) && isDeluxe(number);
     }
 
     private boolean isDeluxe(Integer number) {
