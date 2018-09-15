@@ -44,15 +44,21 @@ public class FizzBuzzSolutionTest {
     }
 
     @Test
-    public void check_fizz_with_3_in_number() {
-        String answer = fizzBuzz.fizzBuzz(13);
-        assertEquals("fizz", answer);
+    public void check_buzz_with_5_in_number() {
+        String answer = fizzBuzz.fizzBuzz(59);
+        assertEquals("buzz", answer);
     }
 
     @Test
-    public void check_fizz_with_5_in_number() {
-        String answer = fizzBuzz.fizzBuzz(59);
-        assertEquals("buzz", answer);
+    public void check_fizzBuzz_with_5and3_in_number() {
+        String answer = fizzBuzz.fizzBuzz(53);
+        assertEquals("fizz buzz", answer);
+    }
+
+    @Test
+    public void check_fizz_with_3_in_number() {
+        String answer = fizzBuzz.fizzBuzz(13);
+        assertEquals("fizz", answer);
     }
 
     @Test
