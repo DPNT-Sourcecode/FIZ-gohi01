@@ -32,11 +32,18 @@ public class FizzBuzzSolution {
             return false;
         }
 
-        char [] numberList = number.toString().toCharArray();
-        //int sum = IntStream.of(numberList).sum();
-        final int[] ints1 = number.toString().chars()
+        //char [] numberList = number.toString().toCharArray();
+
+        final int[] numberList = number.toString().chars()
                 .map(x -> x - '0')
                 .toArray();
+        int sum = IntStream.of(numberList).sum();
+
+        int firstNumber = numberList[0];
+
+        if (firstNumber * number.toString().length() != sum) {
+            return false;
+        }
 
 
         return true;
