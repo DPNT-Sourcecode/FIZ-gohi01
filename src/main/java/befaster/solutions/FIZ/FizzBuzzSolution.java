@@ -33,7 +33,10 @@ public class FizzBuzzSolution {
         }
 
         char [] numberList = number.toString().toCharArray();
-        int sum = IntStream.of(numberList).sum();
+        //int sum = IntStream.of(numberList).sum();
+        final int[] ints1 = number.toString().chars()
+                .map(x -> x - '0')
+                .toArray();
 
 
         return true;
