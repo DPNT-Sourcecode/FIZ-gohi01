@@ -26,6 +26,11 @@ public class FizzBuzzSolution {
     }
 
     private boolean isDeluxe(Integer number) {
+        if (number < 10) {
+            return false;
+        }
+
+
         return true;
     }
 
