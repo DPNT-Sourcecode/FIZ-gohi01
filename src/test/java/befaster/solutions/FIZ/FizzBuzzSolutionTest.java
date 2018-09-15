@@ -67,11 +67,6 @@ public class FizzBuzzSolutionTest {
         assertEquals("deluxe", answer);
     }
 
-    @Test
-    public void check_delux_divided_by_5() {
-        String answer = fizzBuzz.fizzBuzz(55);
-        assertEquals("deluxe", answer);
-    }
 
     @Test
     public void check_fizz_buzz_delux() {
@@ -86,9 +81,15 @@ public class FizzBuzzSolutionTest {
     }
 
     @Test
-    public void check_fizz_buzz_33() {
+    public void check_fizz_deluxe() {
         String answer = fizzBuzz.fizzBuzz(33);
         assertEquals("fizz deluxe", answer);
+    }
+
+    @Test
+    public void check_buzz_deluxe() {
+        String answer = fizzBuzz.fizzBuzz(55);
+        assertEquals("buzz deluxe", answer);
     }
 
     /**
