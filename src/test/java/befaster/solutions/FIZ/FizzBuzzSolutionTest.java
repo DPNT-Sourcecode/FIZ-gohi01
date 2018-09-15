@@ -68,12 +68,6 @@ public class FizzBuzzSolutionTest {
     }
 
     @Test
-    public void check_min_fizz_deluxe() {
-        String answer = fizzBuzz.fizzBuzz(3);
-        assertEquals("fizz deluxe", answer);
-    }
-
-    @Test
     public void check_min_buzz_deluxe() {
         String answer = fizzBuzz.fizzBuzz(5);
         assertEquals("buzz deluxe", answer);
