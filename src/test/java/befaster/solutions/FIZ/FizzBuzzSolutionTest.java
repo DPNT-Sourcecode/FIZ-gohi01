@@ -68,14 +68,20 @@ public class FizzBuzzSolutionTest {
     }
 
     @Test
-    public void check_delux_with_3_numbers_in_a_row() {
+    public void check_delux_with_3_numbers_in_a_row_and_divided_by_3() {
         String answer = fizzBuzz.fizzBuzz(111);
+        assertEquals("deluxe", answer);
+    }
+
+    @Test
+    public void check_delux_divided_by_5() {
+        String answer = fizzBuzz.fizzBuzz(55);
         assertEquals("deluxe", answer);
     }
     /*
     @Test
-    public void check_delux_divided_by_3() {
-        String answer = fizzBuzz.fizzBuzz(111);
+    public void check_delux_divided_by_5() {
+        String answer = fizzBuzz.fizzBuzz(55);
         assertEquals("deluxe", answer);
     }*/
 

@@ -5,6 +5,7 @@ import java.util.stream.IntStream;
 public class FizzBuzzSolution {
     private static final int MIN_NUMBER = 1;
     private static final int MAX_NUMBER = 9999;
+    private static final int MIN_DELUXE = 10;
 
     public String fizzBuzz(Integer number) {
 
@@ -28,11 +29,9 @@ public class FizzBuzzSolution {
     }
 
     private boolean isDeluxe(Integer number) {
-        if (number < 10) {
+        if (number < MIN_DELUXE) {
             return false;
         }
-
-        //char [] numberList = number.toString().toCharArray();
 
         final int[] numberList = number.toString().chars()
                 .map(x -> x - '0')
@@ -44,7 +43,6 @@ public class FizzBuzzSolution {
         if (firstNumber * number.toString().length() != sum) {
             return false;
         }
-
 
         return true;
     }
