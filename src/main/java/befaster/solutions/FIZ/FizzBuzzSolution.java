@@ -24,7 +24,7 @@ public class FizzBuzzSolution {
             return "fake deluxe";
         } else if (isDeluxe(number) && isFizz(number) && isBuzz(number)) {
             return "fizz buzz deluxe";
-        } else if(isDeluxe(number) && isFizz(number)) {
+        } else if(isHipsterFizzDeluxe(number)) {
             return "fizz deluxe";
         } else if (isFizz(number) && isBuzz(number)) {
             return "fizz buzz";
@@ -61,6 +61,11 @@ public class FizzBuzzSolution {
     private boolean isBuzz(Integer number) {
         return number % 5 == 0
                 || number.toString().contains("5");
+    }
+
+    private boolean isHipsterFizzDeluxe(Integer number) {
+        return number % 3 == 0
+                && number.toString().contains("3");
     }
 
     private boolean isFizz(Integer number) {
