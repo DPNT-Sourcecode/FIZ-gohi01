@@ -45,5 +45,12 @@ public class SumSolutionTest {
         sum.compute(10, -1);
     }
 
+    @Test
+    public void number1_exceed_border() {
+        thrown.expect(NumberFormatException.class);
+
+        sum.compute(100, -1);
+    }
+
 
 }
