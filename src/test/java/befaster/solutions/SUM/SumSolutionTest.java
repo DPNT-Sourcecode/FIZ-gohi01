@@ -6,8 +6,6 @@ import org.junit.Test;
 import org.junit.rules.ExpectedException;
 
 import static junit.framework.TestCase.assertEquals;
-import static org.hamcrest.MatcherAssert.assertThat;
-import static org.hamcrest.Matchers.equalTo;
 
 public class SumSolutionTest {
     private SumSolution sum;
@@ -24,6 +22,10 @@ public class SumSolutionTest {
     @Test
     public void sum_1and0() {
         assertEquals(1, sum.compute(1, 0));
+    }
+    @Test
+    public void sum_big() {
+        assertEquals(199, sum.compute(99, 100));
     }
 
     @Test
