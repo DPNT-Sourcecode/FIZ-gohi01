@@ -10,8 +10,11 @@ public class FizzBuzzSolution {
                 || number > MAX_NUMBER) {
             throw new FizzExceedBorderException();
         }
+        //StatUtils.sum(double[] arr)
 
-        if (isFizz(number) && isBuzz(number)) {
+        if (number.toString().toCharArray()) {
+
+        } else if (isFizz(number) && isBuzz(number)) {
             return "fizz buzz";
         } else if (isFizz(number)) {
             return "fizz";
