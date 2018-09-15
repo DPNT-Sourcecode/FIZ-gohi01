@@ -1,5 +1,7 @@
 package befaster.solutions.FIZ;
 
+import java.util.stream.IntStream;
+
 public class FizzBuzzSolution {
     private static final int MIN_NUMBER = 1;
     private static final int MAX_NUMBER = 9999;
@@ -29,6 +31,9 @@ public class FizzBuzzSolution {
         if (number < 10) {
             return false;
         }
+
+        char [] numberList = number.toString().toCharArray();
+        int sum = IntStream.of(numberList).sum();
 
 
         return true;
