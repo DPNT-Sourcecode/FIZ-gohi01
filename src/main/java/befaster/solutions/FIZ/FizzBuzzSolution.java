@@ -1,10 +1,13 @@
 package befaster.solutions.FIZ;
 
 public class FizzBuzzSolution {
+    private static final int MIN_NUMBER = 1;
+    private static final int MAX_NUMBER = 9999;
 
     public String fizzBuzz(Integer number) {
 
-        if (number < 0) {
+        if (number < MIN_NUMBER
+                || number > MAX_NUMBER) {
             throw new FizzExceedBorderException();
         }
 
@@ -18,7 +21,5 @@ public class FizzBuzzSolution {
         } else {
             return number.toString();
         }
-
     }
-
 }
