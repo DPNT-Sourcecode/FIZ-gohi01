@@ -8,9 +8,9 @@ public class FizzBuzzSolution {
         if (0 == number) {
             return "0";
         } else if (3 == number) {
-            return "Fizz";
+            return "fizz";
         } else {
-            return "Buzz";
+            return "buzz";
         }
     }
 

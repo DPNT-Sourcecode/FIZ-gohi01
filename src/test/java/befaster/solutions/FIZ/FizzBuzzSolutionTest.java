@@ -25,13 +25,19 @@ public class FizzBuzzSolutionTest {
     @Test
     public void check_Fizz() {
         String answer = fizzBuzz.fizzBuzz(3);
-        assertEquals("Fizz", answer);
+        assertEquals("fizz", answer);
     }
 
     @Test
     public void check_buzz() {
         String answer = fizzBuzz.fizzBuzz(5);
-        assertEquals("Buzz", answer);
+        assertEquals("buzz", answer);
+    }
+
+    @Test
+    public void check_fizzBuzz() {
+        String answer = fizzBuzz.fizzBuzz(15);
+        assertEquals("fizz buzz", answer);
     }
 
 }
