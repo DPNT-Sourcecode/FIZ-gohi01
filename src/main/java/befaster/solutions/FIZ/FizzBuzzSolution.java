@@ -14,13 +14,13 @@ public class FizzBuzzSolution {
             throw new FizzExceedBorderException();
         }
 
-        if (isFizz(number) && isBuzz(number) && isDeluxe(number) && number % 2 != 0) {
+        if (isFizz(number) && isBuzz(number) && isFakeDeluxe(number)) {
             return "fizz buzz fake deluxe";
-        } else if (isDeluxe(number) && isBuzz(number) && number % 2 != 0) {
+        } else if (isBuzz(number) && isFakeDeluxe(number)) {
             return "buzz fake deluxe";
-        } else if (isDeluxe(number) && isFizz(number) && number % 2 != 0) {
+        } else if (isFizz(number) && isFakeDeluxe(number)) {
             return "fizz fake deluxe";
-        } else if (isDeluxe(number) && number % 2 != 0) {
+        } else if (isFakeDeluxe(number)) {
             return "fake deluxe";
         } else if (isDeluxe(number) && isFizz(number) && isBuzz(number)) {
             return "fizz buzz deluxe";
@@ -39,6 +39,10 @@ public class FizzBuzzSolution {
         } else {
             return number.toString();
         }
+    }
+
+    private boolean isFakeDeluxe(Integer number) {
+        return (number % 2 != 0) && isDeluxe(number);
     }
 
     private boolean isDeluxe(Integer number) {
