@@ -13,7 +13,10 @@ public class FizzBuzzSolution {
                 || number > MAX_NUMBER) {
             throw new FizzExceedBorderException();
         }
-        if (isDeluxe(number) && number % 2 != 0) {
+
+        if (isDeluxe(number) && isFizz(number) && number % 2 != 0) {
+            return "fizz fake deluxe";
+        } else if (isDeluxe(number) && number % 2 != 0) {
             return "fake deluxe";
         } else if (isDeluxe(number) && isFizz(number) && isBuzz(number)) {
             return "fizz buzz deluxe";

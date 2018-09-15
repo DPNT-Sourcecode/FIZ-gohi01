@@ -62,16 +62,15 @@ public class FizzBuzzSolutionTest {
     }
 
     @Test
-    public void check_minimal_delux() {
+    public void check_minimal_fakedelux() {
         String answer = fizzBuzz.fizzBuzz(11);
-        assertEquals("deluxe", answer);
+        assertEquals("fake deluxe", answer);
     }
-
 
     @Test
     public void check_fizz_buzz_delux() {
         String answer = fizzBuzz.fizzBuzz(555);
-        assertEquals("fizz buzz deluxe", answer);
+        assertEquals("fizz buzz fake deluxe", answer);
     }
 
     @Test
@@ -81,21 +80,15 @@ public class FizzBuzzSolutionTest {
     }
 
     @Test
-    public void check_fizz_deluxe() {
+    public void check_fizz_fakedeluxe() {
         String answer = fizzBuzz.fizzBuzz(33);
-        assertEquals("fizz deluxe", answer);
+        assertEquals("fizz fake deluxe", answer);
     }
 
     @Test
     public void check_buzz_deluxe() {
         String answer = fizzBuzz.fizzBuzz(55);
-        assertEquals("buzz deluxe", answer);
-    }
-
-    @Test
-    public void check_fakedeluxe() {
-        String answer = fizzBuzz.fizzBuzz(77);
-        assertEquals("fake deluxe", answer);
+        assertEquals("buzz fake deluxe", answer);
     }
 
     @Test
