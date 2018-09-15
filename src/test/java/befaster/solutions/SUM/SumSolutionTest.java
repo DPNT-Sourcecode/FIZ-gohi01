@@ -47,5 +47,12 @@ public class SumSolutionTest {
         sum.compute(101, 1);
     }
 
+    @Test
+    public void number2_exceed_border() {
+        thrown.expect(ExceedBorderException.class);
+
+        sum.compute(100, 101);
+    }
+
 
 }
