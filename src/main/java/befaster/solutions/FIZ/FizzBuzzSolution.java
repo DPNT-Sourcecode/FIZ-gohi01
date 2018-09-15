@@ -11,17 +11,24 @@ public class FizzBuzzSolution {
             throw new FizzExceedBorderException();
         }
 
-        if ((number % 3 == 0 && number % 5 == 0)
-                || (number.toString().contains("3") && number.toString().contains("5"))) {
+        if (isFizz(number) && isBuzz(number)) {
             return "fizz buzz";
-        } else if (number % 3 == 0
-                || number.toString().contains("3")) {
+        } else if (isFizz(number)) {
             return "fizz";
-        } else if (number % 5 == 0
-                || number.toString().contains("5")) {
+        } else if (isBuzz(number)) {
             return "buzz";
         } else {
             return number.toString();
         }
+    }
+
+    private boolean isBuzz(Integer number) {
+        return number % 5 == 0
+                || number.toString().contains("5");
+    }
+
+    private boolean isFizz(Integer number) {
+        return number % 3 == 0
+                || number.toString().contains("3");
     }
 }
