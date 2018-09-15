@@ -93,6 +93,12 @@ public class FizzBuzzSolutionTest {
     }
 
     @Test
+    public void check_fakedeluxe() {
+        String answer = fizzBuzz.fizzBuzz(77);
+        assertEquals("fake deluxe", answer);
+    }
+
+    @Test
     public void check_exceed_min_border() {
         thrown.expect(FizzExceedBorderException.class);
         fizzBuzz.fizzBuzz(0);

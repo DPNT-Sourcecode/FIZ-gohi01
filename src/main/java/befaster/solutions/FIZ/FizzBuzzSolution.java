@@ -13,8 +13,9 @@ public class FizzBuzzSolution {
                 || number > MAX_NUMBER) {
             throw new FizzExceedBorderException();
         }
-
-        if (isDeluxe(number) && isFizz(number) && isBuzz(number)) {
+        if (isDeluxe(number) && number % 2 != 0) {
+            return "fake deluxe";
+        } else if (isDeluxe(number) && isFizz(number) && isBuzz(number)) {
             return "fizz buzz deluxe";
         } else if(isDeluxe(number) && isFizz(number)) {
             return "fizz deluxe";
