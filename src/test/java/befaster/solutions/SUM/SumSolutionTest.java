@@ -20,11 +20,6 @@ public class SumSolutionTest {
 
         sum = new SumSolution();
     }
-/*
-    @Test
-    public void compute_sum() {
-        assertThat(sum.compute(1, 1), equalTo(2));
-    }*/
 
     @Test
     public void sum_1and0() {
@@ -33,23 +28,23 @@ public class SumSolutionTest {
 
     @Test
     public void wrong_number1_below_zero() {
-        thrown.expect(NumberFormatException.class);
+        thrown.expect(ExceedBorderException.class);
 
         sum.compute(-1, 0);
     }
 
     @Test
     public void wrong_number2_below_zero() {
-        thrown.expect(NumberFormatException.class);
+        thrown.expect(ExceedBorderException.class);
 
         sum.compute(10, -1);
     }
 
     @Test
     public void number1_exceed_border() {
-        thrown.expect(NumberFormatException.class);
+        thrown.expect(ExceedBorderException.class);
 
-        sum.compute(100, -1);
+        sum.compute(101, 1);
     }
 
 
