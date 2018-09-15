@@ -80,6 +80,12 @@ public class FizzBuzzSolutionTest {
     }
 
     @Test
+    public void check_fizz_buzz_deluxe() {
+        String answer = fizzBuzz.fizzBuzz(345);
+        assertEquals("fizz buzz deluxe", answer);
+    }
+
+    @Test
     public void check_buzz_fakedeluxe() {
         String answer = fizzBuzz.fizzBuzz(55);
         assertEquals("buzz fake deluxe", answer);
