@@ -28,8 +28,6 @@ public class FizzBuzzSolution {
             return "fizz deluxe";
         }  else if(isDeluxe(number) && isBuzz(number)) {
             return "buzz deluxe";
-        } else if (isDeluxe(number)) {
-            return "deluxe";
         } else if (isFizz(number) && isBuzz(number)) {
             return "fizz buzz";
         } else if (isFizz(number)) {
