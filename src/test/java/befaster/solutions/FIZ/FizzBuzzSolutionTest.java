@@ -50,7 +50,7 @@ public class FizzBuzzSolutionTest {
     }
 
     @Test
-    public void check_minimal_fakedelux() {
+    public void check_repeated_odd_number() {
         String answer = fizzBuzz.fizzBuzz(11);
         assertEquals("11", answer);
     }
@@ -58,7 +58,7 @@ public class FizzBuzzSolutionTest {
     @Test
     public void check_fizz_buzz_delux() {
         String answer = fizzBuzz.fizzBuzz(555);
-        assertEquals("fizz buzz fake deluxe", answer);
+        assertEquals("buzz fake deluxe", answer);
     }
 
     @Test
@@ -99,7 +99,7 @@ public class FizzBuzzSolutionTest {
 
     @Test
     public void check_fizz_deluxe_2numbers() {
-        String answer = fizzBuzz.fizzBuzz(336);
+        String answer = fizzBuzz.fizzBuzz(30);
         assertEquals("fizz deluxe", answer);
     }
 
