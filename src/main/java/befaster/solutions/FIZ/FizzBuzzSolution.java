@@ -10,10 +10,10 @@ public class FizzBuzzSolution {
                 || number > MAX_NUMBER) {
             throw new FizzExceedBorderException();
         }
-        //StatUtils.sum(double[] arr)
 
-        if (number.toString().toCharArray()) {
-
+        //count occurences
+        if (isDeluxe(number)) {
+            return "deluxe";
         } else if (isFizz(number) && isBuzz(number)) {
             return "fizz buzz";
         } else if (isFizz(number)) {
@@ -23,6 +23,10 @@ public class FizzBuzzSolution {
         } else {
             return number.toString();
         }
+    }
+
+    private boolean isDeluxe(Integer number) {
+        return true;
     }
 
     private boolean isBuzz(Integer number) {
