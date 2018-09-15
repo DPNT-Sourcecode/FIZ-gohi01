@@ -62,6 +62,18 @@ public class FizzBuzzSolutionTest {
     }
 
     @Test
+    public void check_minimal_delux_with_3_numbers_in_a_row() {
+        String answer = fizzBuzz.fizzBuzz(11);
+        assertEquals("deluxe", answer);
+    }
+    /*
+    @Test
+    public void check_delux_divided_by_3() {
+        String answer = fizzBuzz.fizzBuzz(111);
+        assertEquals("deluxe", answer);
+    }*/
+
+    @Test
     public void check_exceed_min_border() {
         thrown.expect(FizzExceedBorderException.class);
         fizzBuzz.fizzBuzz(0);
@@ -71,6 +83,4 @@ public class FizzBuzzSolutionTest {
         thrown.expect(FizzExceedBorderException.class);
         fizzBuzz.fizzBuzz(10000);
     }
-
-
 }
