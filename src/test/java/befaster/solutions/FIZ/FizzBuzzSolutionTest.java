@@ -98,6 +98,12 @@ public class FizzBuzzSolutionTest {
     }
 
     @Test
+    public void check_fizz_fake_deluxe() {
+        String answer = fizzBuzz.fizzBuzz(3);
+        assertEquals("fizz fake deluxe", answer);
+    }
+
+    @Test
     public void check_even_number() {
         String answer = fizzBuzz.fizzBuzz(22);
         assertEquals("22", answer);
