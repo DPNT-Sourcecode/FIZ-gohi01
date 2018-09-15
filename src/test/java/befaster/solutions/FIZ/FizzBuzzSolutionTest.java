@@ -50,9 +50,14 @@ public class FizzBuzzSolutionTest {
     }
 
     @Test
-    public void check_exceed_border() {
+    public void check_exceed_min_border() {
         thrown.expect(FizzExceedBorderException.class);
         fizzBuzz.fizzBuzz(-1);
+    }
+    @Test
+    public void check_exceed_max_border() {
+        thrown.expect(FizzExceedBorderException.class);
+        fizzBuzz.fizzBuzz(10000);
     }
 
 
