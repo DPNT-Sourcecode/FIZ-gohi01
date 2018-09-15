@@ -15,15 +15,23 @@ public class FizzBuzzSolutionTest {
     }
 
     @Test
-    public void fizzBuzz_0() {
+    public void check_number() {
         String answer = fizzBuzz.fizzBuzz(0);
         assertEquals("0", answer);
     }
 
+
+
     @Test
-    public void fizzBuzz_Fizz() {
+    public void check_Fizz() {
         String answer = fizzBuzz.fizzBuzz(3);
         assertEquals("Fizz", answer);
+    }
+
+    @Test
+    public void check_buzz() {
+        String answer = fizzBuzz.fizzBuzz(5);
+        assertEquals("Buzz", answer);
     }
 
 }

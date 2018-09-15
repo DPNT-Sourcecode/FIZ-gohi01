@@ -7,8 +7,10 @@ public class FizzBuzzSolution {
     public String fizzBuzz(Integer number) {
         if (0 == number) {
             return "0";
-        } else {
+        } else if (3 == number) {
             return "Fizz";
+        } else {
+            return "Buzz";
         }
     }
 
