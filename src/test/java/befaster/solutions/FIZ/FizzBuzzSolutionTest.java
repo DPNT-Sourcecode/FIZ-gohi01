@@ -91,6 +91,14 @@ public class FizzBuzzSolutionTest {
         assertEquals("fizz buzz", answer);
     }
 
+    /**
+     * ILED
+     Some requests have failed (6/43). Here are some of them:
+     - {"method":"fizz_buzz","params":[546],"id":"FIZ_R3_030"}, expected: "fizz buzz", got: "fizz buzz deluxe"
+     - {"method":"fizz_buzz","params":[33],"id":"FIZ_R3_038"}, expected: "fizz deluxe", got: "deluxe"
+     - {"method":"fizz_buzz","params":[222],"id":"FIZ_R3_039"}, expected: "fizz deluxe", got: "deluxe"
+     */
+
     @Test
     public void check_exceed_min_border() {
         thrown.expect(FizzExceedBorderException.class);

@@ -34,15 +34,13 @@ public class FizzBuzzSolution {
             return false;
         }
 
-        final int[] numberList = number.toString().chars()
-                .map(x -> x - '0')
-                .toArray();
-        int sum = IntStream.of(numberList).sum();
+        char[] numberList = number.toString().toCharArray();
+        char firstNumber = numberList[0];
 
-        int firstNumber = numberList[0];
-
-        if (firstNumber * number.toString().length() != sum) {
-            return false;
+        for (char c : numberList) {
+            if (firstNumber != c) {
+                return false;
+            }
         }
 
         return true;
