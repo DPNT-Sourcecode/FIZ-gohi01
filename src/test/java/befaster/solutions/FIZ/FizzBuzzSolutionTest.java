@@ -92,6 +92,12 @@ public class FizzBuzzSolutionTest {
     }
 
     @Test
+    public void check_even_number() {
+        String answer = fizzBuzz.fizzBuzz(22);
+        assertEquals("22", answer);
+    }
+
+    @Test
     public void check_exceed_min_border() {
         thrown.expect(FizzExceedBorderException.class);
         fizzBuzz.fizzBuzz(0);
