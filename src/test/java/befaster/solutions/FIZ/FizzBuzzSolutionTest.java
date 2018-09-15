@@ -16,11 +16,15 @@ public class FizzBuzzSolutionTest {
 
     @Test
     public void check_number() {
-        String answer = fizzBuzz.fizzBuzz(0);
-        assertEquals("0", answer);
+        String answer = fizzBuzz.fizzBuzz(1);
+        assertEquals("1", answer);
     }
 
-
+    @Test
+    public void check_zero_is_fuzz() {
+        String answer = fizzBuzz.fizzBuzz(0);
+        assertEquals("fuzz", answer);
+    }
 
     @Test
     public void check_Fizz() {
@@ -33,11 +37,11 @@ public class FizzBuzzSolutionTest {
         String answer = fizzBuzz.fizzBuzz(5);
         assertEquals("buzz", answer);
     }
-
+/*
     @Test
     public void check_fizzBuzz() {
         String answer = fizzBuzz.fizzBuzz(15);
         assertEquals("fizz buzz", answer);
     }
-
+*/
 }

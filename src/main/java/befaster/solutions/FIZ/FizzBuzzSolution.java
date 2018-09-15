@@ -5,13 +5,15 @@ import befaster.runner.SolutionNotImplementedException;
 public class FizzBuzzSolution {
 
     public String fizzBuzz(Integer number) {
-        if (0 == number) {
-            return "0";
-        } else if (3 == number) {
+
+        if (number % 3 == 0) {
             return "fizz";
-        } else {
+        } else if (number % 5 == 0) {
             return "buzz";
+        } else {
+            return number.toString();
         }
+
     }
 
 }
