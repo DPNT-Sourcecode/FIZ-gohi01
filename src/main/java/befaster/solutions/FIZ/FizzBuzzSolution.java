@@ -26,8 +26,6 @@ public class FizzBuzzSolution {
             return "fizz buzz deluxe";
         } else if(isDeluxe(number) && isFizz(number)) {
             return "fizz deluxe";
-        }  else if(isDeluxe(number) && isBuzz(number)) {
-            return "buzz deluxe";
         } else if (isFizz(number) && isBuzz(number)) {
             return "fizz buzz";
         } else if (isFizz(number)) {
@@ -44,6 +42,9 @@ public class FizzBuzzSolution {
     }
 
     private boolean isDeluxe(Integer number) {
+        if (number < MIN_DELUXE) {
+            return false;
+        }
 
         char[] numberList = number.toString().toCharArray();
         char firstNumber = numberList[0];

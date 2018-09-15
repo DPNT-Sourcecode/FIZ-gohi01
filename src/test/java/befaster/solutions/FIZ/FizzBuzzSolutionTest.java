@@ -22,13 +22,13 @@ public class FizzBuzzSolutionTest {
     @Test
     public void check_number() {
         String answer = fizzBuzz.fizzBuzz(1);
-        assertEquals("fake deluxe", answer);
+        assertEquals("1", answer);
     }
 
     @Test
-    public void check_buzz() {
+    public void check_min_buzz_fake_deluxe() {
         String answer = fizzBuzz.fizzBuzz(5);
-        assertEquals("buzz fake deluxe", answer);
+        assertEquals("buzz", answer);
     }
 
     @Test
@@ -76,7 +76,7 @@ public class FizzBuzzSolutionTest {
     @Test
     public void check_fizz_fakedeluxe() {
         String answer = fizzBuzz.fizzBuzz(3);
-        assertEquals("fizz fake deluxe", answer);
+        assertEquals("fizz", answer);
     }
 
     @Test
