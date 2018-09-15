@@ -1,13 +1,18 @@
 package befaster.solutions.FIZ;
 
 import org.junit.Before;
+import org.junit.Rule;
 import org.junit.Test;
+import org.junit.rules.ExpectedException;
 
 import static org.junit.Assert.*;
 
 public class FizzBuzzSolutionTest {
 
     private FizzBuzzSolution fizzBuzz;
+
+    @Rule
+    public ExpectedException thrown = ExpectedException.none();
 
     @Before
     public void setUp() {
@@ -21,13 +26,13 @@ public class FizzBuzzSolutionTest {
     }
 
     @Test
-    public void check_zero_is_fuzzBuzz() {
+    public void check_zero_is_fizzBuzz() {
         String answer = fizzBuzz.fizzBuzz(0);
         assertEquals("fizz buzz", answer);
     }
 
     @Test
-    public void check_Fizz() {
+    public void check_fizz() {
         String answer = fizzBuzz.fizzBuzz(3);
         assertEquals("fizz", answer);
     }
@@ -43,4 +48,12 @@ public class FizzBuzzSolutionTest {
         String answer = fizzBuzz.fizzBuzz(15);
         assertEquals("fizz buzz", answer);
     }
+
+    @Test
+    public void check_exceed_border() {
+        thrown.expect(FizzExceedBorderException.class);
+        fizzBuzz.fizzBuzz(-1);
+    }
+
+
 }
