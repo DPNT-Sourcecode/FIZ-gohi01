@@ -44,6 +44,14 @@ public class FizzBuzzSolutionTest {
     }
 
     @Test
+    public void check_fizz_with_3_in_number() {
+        String answer = fizzBuzz.fizzBuzz(13);
+        assertEquals("fizz", answer);
+    }
+
+
+
+    @Test
     public void check_exceed_min_border() {
         thrown.expect(FizzExceedBorderException.class);
         fizzBuzz.fizzBuzz(0);
