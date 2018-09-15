@@ -98,11 +98,18 @@ public class FizzBuzzSolutionTest {
     }
 
     @Test
-    public void check_fizz_fake_deluxe() {
+    public void check_min_fizz_fake_deluxe() {
         String answer = fizzBuzz.fizzBuzz(3);
         assertEquals("fizz fake deluxe", answer);
     }
+    @Test
+    public void check_fizz_fake_deluxe_odd() {
+        String answer = fizzBuzz.fizzBuzz(237);
+        assertEquals("fizz fake deluxe", answer);
+    }
 
+//TODO: buzz fake deluxe
+//TODO: fizz buzz fake deluxe
     @Test
     public void check_even_number() {
         String answer = fizzBuzz.fizzBuzz(22);
