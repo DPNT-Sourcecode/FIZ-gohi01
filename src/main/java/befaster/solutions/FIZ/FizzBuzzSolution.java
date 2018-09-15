@@ -14,8 +14,9 @@ public class FizzBuzzSolution {
             throw new FizzExceedBorderException();
         }
 
-        //count occurences
-        if (isDeluxe(number)) {
+        if (isDeluxe(number) && isFizz(number) && isBuzz(number)) {
+            return "fizz buzz deluxe";
+        } else if (isDeluxe(number)) {
             return "deluxe";
         } else if (isFizz(number) && isBuzz(number)) {
             return "fizz buzz";

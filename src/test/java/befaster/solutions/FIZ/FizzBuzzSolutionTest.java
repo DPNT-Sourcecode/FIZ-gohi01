@@ -78,12 +78,12 @@ public class FizzBuzzSolutionTest {
         String answer = fizzBuzz.fizzBuzz(55);
         assertEquals("deluxe", answer);
     }
-    /*
+
     @Test
-    public void check_delux_divided_by_5() {
-        String answer = fizzBuzz.fizzBuzz(55);
-        assertEquals("deluxe", answer);
-    }*/
+    public void check_fizz_buzz_delux() {
+        String answer = fizzBuzz.fizzBuzz(555);
+        assertEquals("fizz buzz deluxe", answer);
+    }
 
     @Test
     public void check_exceed_min_border() {
