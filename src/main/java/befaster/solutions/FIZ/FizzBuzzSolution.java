@@ -14,7 +14,8 @@ public class FizzBuzzSolution {
         if (number % 3 == 0
                 && number % 5 == 0) {
             return "fizz buzz";
-        } else if (number % 3 == 0) {
+        } else if (number % 3 == 0
+                || number.toString().contains("3")) {
             return "fizz";
         } else if (number % 5 == 0) {
             return "buzz";

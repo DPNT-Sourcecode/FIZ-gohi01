@@ -49,7 +49,11 @@ public class FizzBuzzSolutionTest {
         assertEquals("fizz", answer);
     }
 
-
+    @Test
+    public void check_fizz_with_5_in_number() {
+        String answer = fizzBuzz.fizzBuzz(15);
+        assertEquals("buzz", answer);
+    }
 
     @Test
     public void check_exceed_min_border() {
