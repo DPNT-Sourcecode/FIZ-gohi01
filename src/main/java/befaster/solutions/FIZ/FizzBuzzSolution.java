@@ -44,9 +44,6 @@ public class FizzBuzzSolution {
     }
 
     private boolean isDeluxe(Integer number) {
-        if (number < MIN_DELUXE) {
-            return false;
-        }
 
         char[] numberList = number.toString().toCharArray();
         char firstNumber = numberList[0];

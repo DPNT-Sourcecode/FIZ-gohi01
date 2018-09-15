@@ -34,7 +34,7 @@ public class FizzBuzzSolutionTest {
     @Test
     public void check_buzz() {
         String answer = fizzBuzz.fizzBuzz(5);
-        assertEquals("buzz", answer);
+        assertEquals("buzz fake deluxe", answer);
     }
 
     @Test
@@ -81,7 +81,7 @@ public class FizzBuzzSolutionTest {
 
     @Test
     public void check_fizz_fakedeluxe() {
-        String answer = fizzBuzz.fizzBuzz(33);
+        String answer = fizzBuzz.fizzBuzz(3);
         assertEquals("fizz fake deluxe", answer);
     }
 
@@ -90,13 +90,13 @@ public class FizzBuzzSolutionTest {
         String answer = fizzBuzz.fizzBuzz(55);
         assertEquals("buzz fake deluxe", answer);
     }
-
+/*
     @Test
     public void check_min_fizz_deluxe() {
         String answer = fizzBuzz.fizzBuzz(3);
         assertEquals("fizz deluxe", answer);
     }
-
+*/
     @Test
     public void check_even_number() {
         String answer = fizzBuzz.fizzBuzz(22);
