@@ -14,7 +14,9 @@ public class FizzBuzzSolution {
             throw new FizzExceedBorderException();
         }
 
-        if (isFakeDeluxe(number) && isHipsterBuzzDeluxe(number) && isHipsterFizzDeluxe(number)) {
+        if (isFakeDeluxe(number) &&
+                ((isHipsterBuzzDeluxe(number) && isFizz(number)) || (isHipsterFizzDeluxe(number) && isBuzz(number)))
+                ) {
             return "fizz buzz fake deluxe";
         } else if (isFakeDeluxe(number) && isHipsterBuzzDeluxe(number)) {
             return "buzz fake deluxe";
