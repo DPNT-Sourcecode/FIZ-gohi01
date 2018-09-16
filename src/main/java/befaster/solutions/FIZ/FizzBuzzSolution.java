@@ -20,7 +20,9 @@ public class FizzBuzzSolution {
             return "buzz fake deluxe";
         } else if (isFakeDeluxe(number) && isHipsterFizzDeluxe(number)) {
             return "fizz fake deluxe";
-        } else if (isHipsterBuzzDeluxe(number) && isHipsterFizzDeluxe(number)) {
+        } else if (
+                (isHipsterBuzzDeluxe(number) && isFizz(number))
+                        || (isHipsterFizzDeluxe(number)) && isBuzz(number)) {
             return "fizz buzz deluxe";
         } else if(isHipsterFizzDeluxe(number)) {
             return "fizz deluxe";

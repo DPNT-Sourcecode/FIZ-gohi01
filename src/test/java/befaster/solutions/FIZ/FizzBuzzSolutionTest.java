@@ -28,7 +28,8 @@ public class FizzBuzzSolutionTest {
     @Test
     public void check_fizzBuzz() {
         String answer = fizzBuzz.fizzBuzz(15);
-        assertEquals("buzz fake deluxe", answer);
+        assertEquals("fizz buzz fake deluxe", answer);
+        //- {"method":"fizz_buzz","params":[15],"id":"FIZ_R5_040"}, expected: "fizz buzz fake deluxe", got: "buzz fake deluxe"
     }
 
     @Test
