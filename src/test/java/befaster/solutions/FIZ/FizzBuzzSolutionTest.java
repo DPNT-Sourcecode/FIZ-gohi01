@@ -100,8 +100,16 @@ public class FizzBuzzSolutionTest {
     @Test
     public void check_fizz_deluxe_2numbers() {
         String answer = fizzBuzz.fizzBuzz(30);
-        assertEquals("fizz deluxe", answer);
+        assertEquals("fizz buzz deluxe", answer);
     }
+
+    /*
+    *
+ - {"method":"fizz_buzz","params":[30],"id":"FIZ_R5_038"}, expected: "fizz buzz deluxe", got: "fizz deluxe"
+ - {"method":"fizz_buzz","params":[15],"id":"FIZ_R5_040"}, expected: "fizz buzz fake deluxe", got: "buzz fake deluxe"
+ - {"method":"fizz_buzz","params":[45],"id":"FIZ_R5_041"}, expected: "fizz buzz fake deluxe", got: "buzz fake deluxe"
+
+    * */
 
     @Test
     public void check_min_fizz_fake_deluxe() {
